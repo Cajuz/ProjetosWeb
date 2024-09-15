@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+header {
+  background: #000000;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+header .logo img {
+  height: auto;
+  max-height: 50px; 
+}
+.login {
+  height: 25px;
+}
+
+.loginp {
+  font-size: 12px;
+}
+
+.carrinho {
+  height: 35px;
+}
+
+header .search-bar {
+  display: flex;
+  flex-grow: 1;
+  max-width: 600px; 
+  margin: 0 10px; 
+}
+
+header .search-bar input[type="text"] {
+  padding: 5px;
+  font-size: 1em;
+  flex-grow: 1;
+  width: 100%;
+}
+
+header .search-bar button {
+  padding: 5px 10px;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+header .search-bar button:hover {
+  background: #ffffff;
+}
+
+.lupa {
+  height: 20px;
+}
+
+header .header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+header .header-buttons a {
+  padding: 5px 10px;
+  background: #000000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+header .header-buttons a:hover {
+  background: #777;
+}
+
+
+nav {
+  position: fixed;
+  top:70px; 
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px 0;
+  z-index: 999;
+}
+
+.menupng{
+  height: 50px; 
+}
+
+.menu-button {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  text-align: center;
+  position: relative;
+}
+
+.menu li {
+  margin: 5px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background-color: #ffffff;
+}
+
+.menu-button:hover + .menu,
+.menu:hover {
+  display: inline-block;
+}
+footer {
+  position: fixed;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 100000;
+  top: 690px;
+}
+
+footer .social-media {
+  background-color: black;
+  margin-top: px;
+  height: 60px;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+footer .social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  z-index: 10000000000;
+}
+
+.whatsapp-btn img {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover img {
+  transform: scale(1.1);
+}
+
+.instagram-btn {
+  bottom: 10px;
+  right: 20px;
+  padding: 0; /* Remova o padding para evitar espaçamento extra */
+}
+
+.instagram-btn img {
+  width: 40px; /* Defina a largura desejada para a imagem */
+  border-radius: 50%; /* Para tornar a imagem redonda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.instagram-btn:hover img {
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse */
+}
+
+*, *:before, *:after { 
+  margin:0;
+  padding:0; 
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+/* esconde as ancoras da tela */
+a.links{
+  display: none;
+}
+
+/* content que contem os formulários */
+.content{
+  width: 500px;
+  margin: 0px auto;
+  position: relative; 
+}
+
+/* formatando o cabeçalho dos formulários */
+.content h1{
+  font-size: 48px;
+  color: #000000;
+  padding: 10px 0;
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.content h1:after{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(0, 0, 0, 0.8) 20%,rgb(0, 0, 0) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgb(2, 2, 2) 53%,rgba(147,184,189,0.8) 79%,rgb(0, 0, 0) 100%); 
+}
+
+.content p{
+  margin-bottom:15px;
+}
+.content p:first-child{
+  margin: 0px;
+}
+label{
+  color: #000000;
+  position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  {
+  color: #000000; 
+  font-style: italic;
+}
+.content input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color: #bebcbc;
+  font-style: italic;
+} 
+.content input {
+  outline: none;
+}
+
+.content input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;  
+  border: 1px solid #b2b2b2;
+  
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(196, 196, 196, 0.6) inset;
+  
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 100%!important;
+  cursor: pointer;  
+  background: #a80000;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff; 
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: #7e0000;
+}
+
+/*marcando os links para mudar de um formulário para outro */
+.link{
+  position: absolute;
+  background: #fcfffb;
+  color: #000000;
+  left: 0px;
+  height: px;
+  width: 440px;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border: 1px solid #000000;
+  
+
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+.link a {
+  font-weight: bold;
+  background: #ff580b;
+  padding: 6px;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  border: 1px solid #000000;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;  
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s  linear;
+}
+.link a:hover {
+  color: #ff9900;
+  background: #f7f7f7;
+  border: 1px solid #000000;
+}
+
+/* estilos para para ambos os formulários */
+
+
+#cadastro, 
+#login{
+  position: absolute ;
+  top: 0px;
+  width: 88%; 
+  padding: 18px 6% 60px 6%;
+  margin: 150px 0 35px 0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  -webkit-boxshadow: 5px;
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}

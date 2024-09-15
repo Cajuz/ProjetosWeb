@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+header .logo img {
+    height: auto;
+    max-height: 50px; 
+}
+.login {
+    height: 25px;
+}
+
+.loginp {
+    font-size: 12px;
+}
+
+.carrinho {
+    height: 35px;
+}
+
+header .search-bar {
+    display:flex;
+    flex-grow: 1;
+    max-width: 600px; 
+    margin: 0 10px; 
+}
+
+header .search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 1em;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 10px;
+}
+
+header .search-bar button {
+    margin-left: 562px;
+    position: absolute;
+    padding: 5px 10px;
+    background: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #ffffff;
+}
+
+header .search-bar button:hover {
+    background: #8a8a8a;
+}
+
+.lupa {
+    height: 14px;
+}
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.produtos{
+    font-size: 1.2em;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.produtos:last-child {
+        border-bottom: none;
+}
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+
+header .header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .header-buttons a {
+    padding: 5px 10px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+header .header-buttons a:hover {
+    background: #777;
+}
+
+
+nav {
+    position: fixed;
+    top:70px; 
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0px 0;
+    z-index: 999;
+}
+
+.menupng{
+    height: 50px; 
+}
+
+.menu-button {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.menu li {
+    margin: 5px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+.menu-button:hover + .menu,
+.menu:hover {
+    display: inline-block;
+}
+
+main {
+    padding-top: 150px;
+    width: 100%; 
+    max-width: 100%; 
+    margin: 20px auto;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.img1{
+    height:600px ;
+    width: 90%;
+    margin-left: 80px ;
+}
+.content-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.content-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #332e2e;
+}
+
+.content-section p {
+    font-size: 1em;
+    color: #666;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-item button {
+width: 250px;
+height: 50px;
+background-color: rgb(167, 0, 0);
+color:#ffffff;
+border-radius: 10px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+.product-item button:hover{
+    background-color: #880000;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-media {
+    background-color: black;
+    margin-top: px;
+    height: 60px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+.button-none {
+    border: 0;
+    background-color: #777;
+    border-radius: 16px;
+    font-size: medium;
+}
+
+/* Define a posição fixa e tamanho do carrinho */
+.cart-container {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 350px; /* Defina a largura desejada */
+    height: 88vh; /* Altura total da viewport */
+    background-color: #fff; /* Cor de fundo para melhor visibilidade */
+    box-shadow: -2px 0 10px rgb(56, 56, 56); /* Sombra para destacar o carrinho */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que a altura da tela */
+    z-index: 10000000;
+    padding: 16px; /* Adiciona espaçamento interno */
+    border-radius: 8px;
+    display: none;
+}
+
+/* Outros estilos de carrinho existentes */
+.title-carrinho {
+    text-align: center;
+    margin-bottom: 16px; /* Espaçamento inferior para separar do conteúdo */
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head-item {
+    text-align: start;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.second-col,
+.third-col {
+    width: 26%;
+}
+
+.cart-product td {
+    padding: 8px 0;
+}
+
+.product-identification {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-image {
+    width: 50px; /* Ajuste para caber melhor no layout */
+    height: auto;
+    max-height: 70px;
+}
+
+.cart-product-title {
+    margin-left: 16px;
+    font-size: 18px;
+    word-wrap: break-word; /* Quebra de linha para textos longos */
+    max-width: 120px; /* Limita a largura do título */
+}
+
+.cart-product-price {
+    font-family: "raleway", sans-serif;
+}
+
+.product-qtd-input {
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    text-align: center;
+    background-color: #eee;
+}
+
+.remove-product-button {
+    margin-left: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.remove-product-button:hover {
+    filter: brightness(0.8);
+}
+
+.cart-total-container {
+    border-top: 1px solid #959595;
+    text-align: end;
+    padding: 6px 0 0 0;
+    font-size: 18px;
+    margin-top: 16px; /* Espaçamento superior para separar do conteúdo */
+}
+
+.cart-total-container strong {
+    margin-right: 12px;
+}
+
+.purchase-button {
+    display: block;
+    margin: 24px auto 0;
+    background-color: #910000;
+    color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.2s;
+    width: calc(100% - 90px); /* Ajusta a largura do botão para caber dentro do contêiner */
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+.purchase-button:hover {
+    filter: brightness(0.8);
+}
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;
+}
+
+.whatsapp-btn img {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover img {
+    transform: scale(1.1);
+}
+
+.instagram-btn {
+    bottom: 10px;
+    right: 20px;
+    padding: 0; /* Remova o padding para evitar espaçamento extra */
+}
+
+.instagram-btn img {
+    width: 40px; /* Defina a largura desejada para a imagem */
+    border-radius: 50%; /* Para tornar a imagem redonda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.instagram-btn:hover img {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem ao passar o mouse */
+}
+
+#cart-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+/* Estilos para telas menores que 768px (por exemplo, tablets e smartphones em modo paisagem) */
+@media only screen and (max-width: 767px) {
+    header .search-bar button {
+        margin-left: 0; /* Redefine o posicionamento do botão de pesquisa */
+    }
+
+    main {
+        padding-top: 100px; /* Ajusta o espaçamento do conteúdo principal */
+    }
+
+    .img1 {
+        margin-left: 0; /* Redefine a margem para a imagem */
+    }
+
+    .product-item button {
+        width: 100%; /* Botão de largura total */
+    }
+
+    .cart-container {
+        width: 100%; /* Carrinho de largura total */
+    }
+
+    .whatsapp-btn,
+    .instagram-btn {
+        right: 10px; /* Ajusta a posição dos botões de mídia social */
+    }
+}
+
+/* Estilos para telas menores que 480px (por exemplo, smartphones em modo retrato) */
+@media only screen and (max-width: 479px) {
+    header .search-bar {
+        max-width: 100%; /* Redefine a largura máxima da barra de pesquisa */
+        margin: 0; /* Remove a margem da barra de pesquisa */
+    }
+
+    header .search-bar button {
+        margin-left: 0; /* Redefine o posicionamento do botão de pesquisa */
+    }
+
+    .img1 {
+        width: 100%; /* Imagem de largura total */
+        margin-left: 0; /* Redefine a margem para a imagem */
+    }
+
+    .product-item button {
+        width: 100%; /* Botão de largura total */
+    }
+
+    .cart-container {
+        width: 100%; /* Carrinho de largura total */
+    }
+
+    .whatsapp-btn,
+    .instagram-btn {
+        right: 10px; /* Ajusta a posição dos botões de mídia social */
+    }
+}
+
+/* Estilos do carrossel */
+.slideshow-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slides {
+    height: 100%;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+  
+    display: none;
+  }
+  
+  .slide[data-active] {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .previous-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    font-weight: bold;
+  
+    color: #530000;
+    background-color:#ffffff83;
+    border: 0;
+  }
+  
+  .previous-button {
+    left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .next-button {
+    right: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .previous-button:hover,
+  .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
