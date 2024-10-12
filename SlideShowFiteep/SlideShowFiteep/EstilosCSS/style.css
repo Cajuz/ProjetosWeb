@@ -135,6 +135,19 @@ input[type="radio"]:nth-of-type(2):checked ~ .slide {
     font-size: 18px;
 }
 
+.ano{
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 18px;
+    bottom: 80%;
+    left: 15%;
+
+}
+
 .info {
     position: absolute;
     bottom: 10%;
